@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ajouetr dépense</title>
+</head>
+
+<body>
+    <div class="containerPrincipale">
+
+        <div class="container">
+
+            <section>
+
+                <div class="b1">
+                    <div class="b">
+                        <h1>Dépense</h1>
+
+                        <div class="text">
+
+
+                            <P id="totalDepense">0</P>
+                        </div>
+                    </div>
+                    <div class="b">
+                        <h1>Revenu</h1>
+                        <div class="text">
+
+                            <p id="totalRevenu">0</p>
+                        </div>
+                    </div>
+                    <div class="b">
+                        <h1>Solde</h1>
+                        <div class="text">
+                            <p id="totalSoldes">0</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partie revenue -->
+
+            <div class="containerR">
+                <div class="title-contentR">
+
+                    <button class="addContactModalButtonR" type="button">Ajouetr Revenu</button>
+                </div>
+                <!--le  modal Revenu -->
+                <div class="modalR" id="contactModalR">
+                    <div class="modal-contentR">
+                        <span class="closeR">X</span>
+                        <div class="formR">
+                            <form action="">
+                                <!-- <h2>Ajouter Revenu </h2> -->
+                                <label for="titre">TITRE</label>
+                                <input type="text" name="titreR" id="titreR" placeholder="électricité">
+                                <label for="montant">MONTRANT</label>
+                                <input type="number" name="montantR" id="montantR" value="" placeholder="électricité">
+
+                                <button type="submit" class="addContactButtonR">VALIDEZ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="contactRevenu">
+                    <!-- <h1 class="titre-depenseR">Liste des revenus</h1> -->
+
+                    <table class="tableR" align="center">
+                        <caption>Liste des Revenus</caption>
+                        <thead>
+                            <tr>
+                                <th>Titre</th>
+                                <th>Montant</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+
+
+
+                    </table>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="containerDepense">
+
+                <div class="title-content">
+
+                    <button id="addContactModalButton" type="button">Ajouetr Dépense</button>
+                </div>
+                <!--le  modal -->
+                <div class="modal" id="contactModal">
+                    <div class="modal-content">
+                        <span class="close">X</span>
+                        <div class="form">
+                            <form action="" name="tes">
+                                <h2>Ajouter dépense <span class="count">0</span> </h2>
+                                <label for="titre">TITRE</label>
+                                <input type="text" name="titre" id="titre" placeholder="électricité">
+                                <label for="montant">MONTRANT</label>
+                                <input type="number" name="montant" id="montant" value="0" placeholder="électricité">
+
+                                <button type="submit" class="addContactButton">VALIDEZ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="contact">
+
+                    <table class="table" align="center">
+                        <caption>Liste des dépenses</caption>
+
+                        <thead>
+                            <tr>
+                                <th>Titre</th>
+                                <th>Montant</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+
+
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
